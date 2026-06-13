@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import styles from '../styles/HeroSection.module.css'
-
-const HERO_IMG = 'https://picsum.photos/560/380?random=42'
+import HERO_IMG from '../assets/hero-girl.png'
 
 export default function HeroSection() {
   const [hasGap, setHasGap] = useState('')

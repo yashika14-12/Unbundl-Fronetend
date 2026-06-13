@@ -1,7 +1,14 @@
 import { useState, useEffect } from 'react'
 import styles from '../styles/TestimonialsSection.module.css'
 
-const photoUrl = (i) => `https://picsum.photos/200/200?random=${110 + i}`
+const TESTIMONIAL_PHOTOS = [
+  '/images/testimonial-1.jpg',
+  '/images/testimonial-2.jpg',
+  '/images/testimonial-3.jpg',
+  '/images/testimonial-4.jpg',
+  '/images/testimonial-5.jpg',
+]
+const photoUrl = (i) => TESTIMONIAL_PHOTOS[i] ?? TESTIMONIAL_PHOTOS[0]
 
 function TestimonialCard({ comment, index }) {
   return (

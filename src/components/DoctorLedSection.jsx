@@ -1,6 +1,5 @@
 import styles from '../styles/DoctorLedSection.module.css'
-
-const DOCTOR_IMG = 'https://picsum.photos/560/480?random=95'
+import DOCTOR_IMG from '../assets/doctor-led.jpg'
 
 export default function DoctorLedSection() {
   return (

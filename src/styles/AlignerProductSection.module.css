@@ -1,156 +1,147 @@
 .section {
   padding: var(--section-py) 0;
-  background: #fff;
+  background: #eef2ff;
 }
 
 .grid {
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 48px;
+  gap: 64px;
   display: grid;
-}
-
-.badge {
-  background: var(--purple-bg);
-  color: var(--purple);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 999px;
-  margin-bottom: 16px;
-  padding: 4px 12px;
-  font-size: .68rem;
-  font-weight: 700;
-  display: inline-block;
 }
 
 .title {
   color: #0f172a;
-  margin-bottom: 16px;
-  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  margin-bottom: 24px;
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
   font-weight: 800;
-  line-height: 1.2;
-}
-
-.title .italic {
-  color: var(--purple);
-  font-style: italic;
+  line-height: 1.15;
 }
 
 .body {
-  color: #64748b;
-  margin-bottom: 12px;
-  font-size: .95rem;
+  color: #374151;
+  margin-bottom: 16px;
+  font-size: .97rem;
   line-height: 1.8;
 }
 
-.outlineBtn {
-  border: 1.5px solid var(--purple);
-  color: var(--purple);
-  cursor: pointer;
-  background: none;
-  border-radius: 999px;
-  align-items: center;
-  gap: 8px;
-  margin-top: 12px;
-  padding: 10px 24px;
-  font-size: .9rem;
-  font-weight: 600;
-  transition: background .2s;
-  display: inline-flex;
-}
-
-.outlineBtn:hover {
-  background: var(--purple-bg);
-}
-
 .card {
-  background: #f8f4ff;
-  border: 1px solid #ede9fe;
+  background: #fff;
   border-radius: 20px;
-  padding: 28px 32px;
+  padding: 32px 36px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
 }
 
-.cardHeader {
+.cardTop {
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: flex;
+}
+
+.cardLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .cardName {
   color: #0f172a;
-  font-size: 1.15rem;
+  font-size: 1.4rem;
   font-weight: 800;
 }
 
-.cardSub {
-  color: #64748b;
-  margin-top: 2px;
-  font-size: .78rem;
+.productImg {
+  object-fit: contain;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
 }
 
-.stars {
-  align-items: center;
-  gap: 2px;
+.strikePrice {
+  color: #94a3b8;
+  text-decoration: line-through;
+  font-size: .95rem;
+  margin-bottom: 0;
+}
+
+.mainPrice {
+  color: #374151;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 1rem;
   display: flex;
 }
 
-.rating {
-  color: #64748b;
-  margin-left: 4px;
-  font-size: .72rem;
-}
-
-.cardImg {
-  object-fit: cover;
-  border-radius: 12px;
-  width: 100%;
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-.cardFooter {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
-
-.priceLabel {
-  color: #64748b;
-  font-size: .72rem;
-}
-
-.price {
+.priceHighlight {
   color: var(--purple);
-  margin-top: 2px;
-  font-size: 1.35rem;
+  font-size: 1.6rem;
   font-weight: 800;
-  line-height: 1;
 }
 
-.price span {
-  color: #64748b;
-  font-size: .82rem;
-  font-weight: 500;
+.taxNote {
+  color: #94a3b8;
+  margin-top: 4px;
+  font-size: .8rem;
 }
 
-.filledBtn {
-  background: var(--purple);
-  color: #fff;
-  cursor: pointer;
+.divider {
   border: none;
-  border-radius: 999px;
-  padding: 10px 24px;
-  font-size: .9rem;
-  font-weight: 600;
-  transition: background .2s;
+  border-top: 1px solid #e2e8f0;
+  margin: 20px 0;
 }
 
-.filledBtn:hover {
-  background: var(--purple-dark);
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-@media (width <= 768px) {
+.featureItem {
+  color: #374151;
+  align-items: center;
+  gap: 10px;
+  font-size: .92rem;
+  display: flex;
+}
+
+.check {
+  background: #d1fae5;
+  color: #16a34a;
+  border-radius: 50%;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  font-size: .75rem;
+  font-weight: 700;
+  display: flex;
+}
+
+.learnRow {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.learnLink {
+  color: var(--purple);
+  align-items: center;
+  gap: 6px;
+  font-size: .95rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.learnLink:hover {
+  text-decoration: underline;
+}
+
+@media (width <=768px) {
   .grid {
     grid-template-columns: 1fr;
     gap: 32px;

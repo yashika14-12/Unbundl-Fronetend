@@ -1,7 +1,6 @@
 import styles from '../styles/HowItWorksSection.module.css'
 import STEPS from '../data/howItWorksSteps.json'
-
-const HOW_IMG = 'https://picsum.photos/520/390?random=90'
+import HOW_IMG from '../assets/how-it-works.jpg'
 
 export default function HowItWorksSection() {
   return (

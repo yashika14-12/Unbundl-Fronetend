@@ -1,6 +1,6 @@
 [
-  { "concern": "Gaps", "duration": "8 months", "before": "https://picsum.photos/130/140?random=61", "after": "https://picsum.photos/130/140?random=62" },
-  { "concern": "Crooked Teeth", "duration": "8 months", "before": "https://picsum.photos/130/140?random=63", "after": "https://picsum.photos/130/140?random=64" },
-  { "concern": "Open Bite", "duration": "8 months", "before": "https://picsum.photos/130/140?random=65", "after": "https://picsum.photos/130/140?random=66" },
-  { "concern": "Protruding Teeth", "duration": "8 months", "before": "https://picsum.photos/130/140?random=67", "after": "https://picsum.photos/130/140?random=68" }
+  { "concern": "Gaps", "duration": "8 months", "before": "/images/result-1-before.jpg", "after": "/images/result-1-after.jpg" },
+  { "concern": "Crooked Teeth", "duration": "8 months", "before": "/images/result-2-before.jpg", "after": "/images/result-2-after.jpg" },
+  { "concern": "Open Bite", "duration": "8 months", "before": "/images/result-3-before.jpg", "after": "/images/result-3-after.jpg" },
+  { "concern": "Protruding Teeth", "duration": "8 months", "before": "/images/result-4-before.jpg", "after": "/images/result-4-after.jpg" }
 ]

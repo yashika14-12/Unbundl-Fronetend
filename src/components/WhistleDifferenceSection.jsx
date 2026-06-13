@@ -1,7 +1,6 @@
 import styles from '../styles/WhistleDifferenceSection.module.css'
 import FEATURES from '../data/whistleDifferences'
-
-const DIFFERENCE_IMG = 'https://picsum.photos/560/440?random=80'
+import DIFFERENCE_IMG from '../assets/whistle-difference.jpg'
 
 export default function WhistleDifferenceSection() {
   return (

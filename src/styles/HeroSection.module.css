@@ -1,7 +1,7 @@
 .hero {
   background: #ede9fb;
   align-items: center;
-  min-height: 360px;
+  min-height: 420px;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -13,7 +13,7 @@
   padding: 48px var(--container-px);
   z-index: 2;
   margin: 0 auto;
-  padding-right: 46%;
+  padding-right: 42%;
   position: relative;
 }
 
@@ -39,11 +39,11 @@
 .heroImg {
   object-fit: cover;
   object-position: top center;
-  width: 42%;
-  height: 100%;
+  width: 40%;
+  height: 115%;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 2%;
 }
 
 .formSection {
@@ -203,17 +203,20 @@
   color: #64748b;
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
   .heroInner {
     padding-right: var(--container-px);
     min-height: 260px;
   }
+
   .heroImg {
     display: none;
   }
+
   .formRow {
     flex-direction: column;
   }
+
   .submitBtn {
     flex: none;
     width: 100%;
