@@ -82,28 +82,72 @@
   font-size: .6rem;
 }
 
-.skeleton {
-  background: linear-gradient(90deg, #e0e0e0 25%, #d0d0d0 50%, #e0e0e0 75%) 0 0 / 200% 100%;
-  border-radius: 14px;
-  min-height: 280px;
-  animation: shimmer 1.5s infinite;
+.spinnerWrap {
+  text-align: center;
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
-@keyframes shimmer {
-  0% { background-position: 200% 0; }
-  to { background-position: -200% 0; }
+.spinner {
+  width: 44px;
+  height: 44px;
+  border: 4px solid #ede9fe;
+  border-top-color: var(--purple);
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
 }
 
-.error {
-  color: #dc2626;
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spinnerText {
+  color: #64748b;
+  font-size: .9rem;
+}
+
+.errorBox {
   text-align: center;
   background: #fef2f2;
   border: 1px solid #fecaca;
-  border-radius: 10px;
-  max-width: 400px;
+  border-radius: 14px;
+  max-width: 360px;
   margin: 0 auto 32px;
-  padding: 12px 20px;
-  font-size: .875rem;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.errorIcon {
+  font-size: 1.8rem;
+}
+
+.errorMsg {
+  color: #dc2626;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.retryBtn {
+  background: var(--purple);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 24px;
+  font-size: .85rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background .2s;
+}
+
+.retryBtn:hover {
+  background: var(--purple-dark);
 }
 
 @media (width <= 1024px) {

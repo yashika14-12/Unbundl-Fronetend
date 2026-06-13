@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
 import styles from '../styles/TestimonialsSection.module.css'
+import { useFetch } from '../hooks/useFetch'
 
 const TESTIMONIAL_PHOTOS = [
   '/images/testimonial-1.jpg',
@@ -29,38 +29,46 @@ function TestimonialCard({ comment, index }) {
   )
 }
 
-export default function TestimonialsSection() {
-  const [comments, setComments] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
+function Spinner() {
+  return (
+    <div className={styles.spinnerWrap}>
+      <div className={styles.spinner} />
+      <p className={styles.spinnerText}>Loading testimonials…</p>
+    </div>
+  )
+}
 
-  useEffect(() => {
-    const controller = new AbortController()
-    ;(async () => {
-      try {
-        const res = await fetch('https://jsonplaceholder.typicode.com/comments?_limit=5', { signal: controller.signal })
-        if (!res.ok) throw new Error('Failed to load')
-        setComments(await res.json())
-      } catch (e) {
-        if (e.name !== 'AbortError') setError('Could not load testimonials.')
-      } finally {
-        setLoading(false)
-      }
-    })()
-    return () => controller.abort()
-  }, [])
+function ErrorState({ message, onRetry }) {
+  return (
+    <div className={styles.errorBox}>
+      <p className={styles.errorIcon}>⚠</p>
+      <p className={styles.errorMsg}>{message}</p>
+      <button className={styles.retryBtn} onClick={onRetry}>Try again</button>
+    </div>
+  )
+}
+
+export default function TestimonialsSection() {
+  const { data: comments, loading, error, retry } = useFetch(
+    'https://jsonplaceholder.typicode.com/comments?_limit=5'
+  )
 
   return (
     <section className={styles.section}>
       <div className="container">
         <h2 className={styles.title}>Happy Smilers!</h2>
-        {error && <div className={styles.error}>{error}</div>}
-        <div className={styles.grid}>
-          {loading
-            ? Array.from({ length: 5 }).map((_, i) => <div key={i} className={styles.skeleton} />)
-            : comments.map((c, i) => <TestimonialCard key={c.id} comment={c} index={i} />)
-          }
-        </div>
+
+        {loading && <Spinner />}
+
+        {error && <ErrorState message={error} onRetry={retry} />}
+
+        {!loading && !error && (
+          <div className={styles.grid}>
+            {comments.map((c, i) => (
+              <TestimonialCard key={c.id} comment={c} index={i} />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   )
