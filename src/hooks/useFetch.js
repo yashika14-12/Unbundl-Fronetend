@@ -16,10 +16,12 @@ export function useFetch(url) {
         const res = await fetch(url, { signal: controller.signal })
         if (!res.ok) throw new Error(`Request failed (${res.status})`)
         setData(await res.json())
-      } catch (e) {
-        if (e.name !== 'AbortError') setError(e.message || 'Something went wrong.')
-      } finally {
         setLoading(false)
+      } catch (e) {
+        if (e.name !== 'AbortError') {
+          setError(e.message || 'Something went wrong.')
+          setLoading(false)
+        }
       }
     })()
 
