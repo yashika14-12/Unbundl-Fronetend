@@ -1,0 +1,104 @@
+.footer {
+  color: #fff;
+  background: #111;
+  padding: 56px 0 64px;
+}
+
+.grid {
+  grid-template-columns: 1.4fr 1.4fr 1.2fr 1fr;
+  gap: 40px;
+  display: grid;
+}
+
+.colTitle {
+  color: #fff;
+  margin-bottom: 24px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.linkList {
+  flex-direction: column;
+  gap: 14px;
+  list-style: none;
+  display: flex;
+}
+
+.linkList a {
+  color: #ffffffa6;
+  font-size: .875rem;
+  transition: color .2s;
+}
+
+.linkList a:hover {
+  color: #fff;
+}
+
+.contactList {
+  flex-direction: column;
+  gap: 14px;
+  list-style: none;
+  display: flex;
+}
+
+.contactItem {
+  color: #ffffffbf;
+  align-items: center;
+  gap: 10px;
+  font-size: .875rem;
+  display: flex;
+}
+
+.contactItem a {
+  color: #ffffffbf;
+  transition: color .2s;
+}
+
+.contactItem a:hover {
+  color: #fff;
+}
+
+.socialRow {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.socialIcon {
+  color: #fff;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: opacity .2s;
+  display: flex;
+}
+
+.socialIcon:hover {
+  opacity: .7;
+}
+
+.legalList {
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 8px;
+  list-style: none;
+  display: flex;
+}
+
+.legalList a {
+  color: #ffffff8c;
+  font-size: .82rem;
+  transition: color .2s;
+}
+
+.legalList a:hover {
+  color: #fff;
+}
+
+@media (width <= 900px) {
+  .grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+
+@media (width <= 480px) {
+  .grid { grid-template-columns: 1fr; }
+}

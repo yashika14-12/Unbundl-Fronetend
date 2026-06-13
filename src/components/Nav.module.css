@@ -1,0 +1,59 @@
+.nav {
+  z-index: 100;
+  background: #fff;
+  border-bottom: 1px solid #f1f5f9;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 3px #0000000d;
+}
+
+.inner {
+  padding: 14px var(--container-px);
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.logo {
+  flex-direction: column;
+  line-height: 1;
+  display: flex;
+}
+
+.logoMain {
+  color: var(--purple);
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.logoSub {
+  color: var(--purple);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-top: 2px;
+  font-size: .52rem;
+  font-weight: 700;
+}
+
+.phoneBtn {
+  background: var(--purple);
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  transition: background .2s;
+  display: flex;
+}
+
+.phoneBtn:hover {
+  background: var(--purple-dark);
+}

@@ -1,0 +1,221 @@
+.hero {
+  background: #ede9fb;
+  align-items: center;
+  min-height: 360px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroInner {
+  width: 100%;
+  max-width: 1200px;
+  padding: 48px var(--container-px);
+  z-index: 2;
+  margin: 0 auto;
+  padding-right: 46%;
+  position: relative;
+}
+
+.heroTitle {
+  color: #0f172a;
+  margin-bottom: 16px;
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.heroSub {
+  color: #374151;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.heroSub .accent {
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.heroImg {
+  object-fit: cover;
+  object-position: top center;
+  width: 42%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.formSection {
+  padding: 40px var(--container-px);
+  background: #fff;
+  border-bottom: 1px solid #eef0f6;
+}
+
+.formInner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.question {
+  text-align: center;
+  color: #0f172a;
+  margin-bottom: 16px;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 600;
+}
+
+.radioGroup {
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.radioLabel {
+  cursor: pointer;
+  color: #374151;
+  align-items: center;
+  gap: 8px;
+  font-size: .95rem;
+  font-weight: 500;
+  display: flex;
+}
+
+.radioLabel input[type="radio"] {
+  accent-color: var(--purple);
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.formRow {
+  gap: 16px;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.input {
+  color: #0f172a;
+  background: #fff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  flex: 1;
+  padding: 12px 14px;
+  font-size: .9rem;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.input:focus {
+  border-color: var(--purple);
+  box-shadow: 0 0 0 3px #7c3aed1a;
+}
+
+.phoneWrap {
+  background: #fff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  flex: 1;
+  align-items: center;
+  transition: border-color .2s, box-shadow .2s;
+  display: flex;
+  overflow: hidden;
+}
+
+.phoneWrap:focus-within {
+  border-color: var(--purple);
+  box-shadow: 0 0 0 3px #7c3aed1a;
+}
+
+.phonePrefix {
+  color: #374151;
+  white-space: nowrap;
+  padding: 0 8px 0 14px;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.phoneWrap input {
+  color: #0f172a;
+  background: none;
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 12px 14px 12px 0;
+  font-size: .9rem;
+}
+
+.submitBtn {
+  background: var(--purple);
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  border-radius: 10px;
+  flex: 0 0 200px;
+  padding: 13px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background .2s;
+}
+
+.submitBtn:hover {
+  background: var(--purple-dark);
+}
+
+.consentRow {
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 6px;
+  display: flex;
+}
+
+.consentRow input[type="checkbox"] {
+  accent-color: var(--purple);
+  cursor: pointer;
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+}
+
+.consentText {
+  color: #64748b;
+  cursor: pointer;
+  font-size: .75rem;
+  line-height: 1.55;
+}
+
+.success {
+  text-align: center;
+  padding: 24px;
+}
+
+.successTitle {
+  color: #16a34a;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.successSub {
+  color: #64748b;
+}
+
+@media (width <= 768px) {
+  .heroInner {
+    padding-right: var(--container-px);
+    min-height: 260px;
+  }
+  .heroImg {
+    display: none;
+  }
+  .formRow {
+    flex-direction: column;
+  }
+  .submitBtn {
+    flex: none;
+    width: 100%;
+  }
+}

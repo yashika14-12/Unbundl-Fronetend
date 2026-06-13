@@ -1,0 +1,62 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap";
+
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --purple: #7c3aed;
+  --purple-light: #a78bfa;
+  --purple-dark: #5b21b6;
+  --purple-bg: #f3eeff;
+  --purple-bg2: #ede9fb;
+  --green: #16a34a;
+  --green-bg: #d1fae5;
+  --dark: #0f172a;
+  --gray: #64748b;
+  --gray-light: #94a3b8;
+  --border: #e2e8f0;
+  --white: #fff;
+  --section-py: clamp(48px, 8vw, 80px);
+  --container-px: clamp(16px, 4vw, 48px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+  font-family: Inter, sans-serif;
+  padding-bottom: 72px;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 var(--container-px);
+  margin: 0 auto;
+}

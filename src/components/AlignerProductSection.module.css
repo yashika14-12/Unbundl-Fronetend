@@ -1,0 +1,158 @@
+.section {
+  padding: var(--section-py) 0;
+  background: #fff;
+}
+
+.grid {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+  display: grid;
+}
+
+.badge {
+  background: var(--purple-bg);
+  color: var(--purple);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 999px;
+  margin-bottom: 16px;
+  padding: 4px 12px;
+  font-size: .68rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.title {
+  color: #0f172a;
+  margin-bottom: 16px;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.title .italic {
+  color: var(--purple);
+  font-style: italic;
+}
+
+.body {
+  color: #64748b;
+  margin-bottom: 12px;
+  font-size: .95rem;
+  line-height: 1.8;
+}
+
+.outlineBtn {
+  border: 1.5px solid var(--purple);
+  color: var(--purple);
+  cursor: pointer;
+  background: none;
+  border-radius: 999px;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 24px;
+  font-size: .9rem;
+  font-weight: 600;
+  transition: background .2s;
+  display: inline-flex;
+}
+
+.outlineBtn:hover {
+  background: var(--purple-bg);
+}
+
+.card {
+  background: #f8f4ff;
+  border: 1px solid #ede9fe;
+  border-radius: 20px;
+  padding: 28px 32px;
+}
+
+.cardHeader {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.cardName {
+  color: #0f172a;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.cardSub {
+  color: #64748b;
+  margin-top: 2px;
+  font-size: .78rem;
+}
+
+.stars {
+  align-items: center;
+  gap: 2px;
+  display: flex;
+}
+
+.rating {
+  color: #64748b;
+  margin-left: 4px;
+  font-size: .72rem;
+}
+
+.cardImg {
+  object-fit: cover;
+  border-radius: 12px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.cardFooter {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.priceLabel {
+  color: #64748b;
+  font-size: .72rem;
+}
+
+.price {
+  color: var(--purple);
+  margin-top: 2px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.price span {
+  color: #64748b;
+  font-size: .82rem;
+  font-weight: 500;
+}
+
+.filledBtn {
+  background: var(--purple);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 24px;
+  font-size: .9rem;
+  font-weight: 600;
+  transition: background .2s;
+}
+
+.filledBtn:hover {
+  background: var(--purple-dark);
+}
+
+@media (width <= 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

@@ -1,0 +1,41 @@
+.ticker {
+  background: #16a34a;
+  padding: 12px 0;
+  overflow: hidden;
+}
+
+.track {
+  align-items: center;
+  width: max-content;
+  animation: ticker 28s linear infinite;
+  display: flex;
+}
+
+@keyframes ticker {
+  0% { transform: translate(0); }
+  to { transform: translate(-50%); }
+}
+
+.item {
+  white-space: nowrap;
+  color: #ffffffd9;
+  align-items: center;
+  margin: 0 32px;
+  font-size: .88rem;
+  display: inline-flex;
+}
+
+.dot {
+  background: #ffffff80;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 5px;
+  height: 5px;
+  margin: 0 20px;
+  display: inline-block;
+}
+
+.bold {
+  color: #fff;
+  font-weight: 700;
+}

@@ -1,0 +1,79 @@
+.wrap {
+  margin: 24px var(--container-px);
+  background: #ede9fb;
+  border-radius: 16px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 40px;
+  display: flex;
+}
+
+.text {
+  color: #0f172a;
+  max-width: 560px;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.right {
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: flex-end;
+  gap: 12px;
+  display: flex;
+}
+
+.cloveLogo {
+  background: #2d1a0e;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  line-height: 1;
+  display: flex;
+}
+
+.cloveMain {
+  color: #f59e0b;
+  letter-spacing: -.3px;
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.cloveSub {
+  color: #f59e0b;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 2px;
+  font-size: .5rem;
+  font-weight: 700;
+}
+
+.findLink {
+  color: var(--purple);
+  cursor: pointer;
+  align-items: center;
+  gap: 2px;
+  font-size: .95rem;
+  font-weight: 600;
+  transition: opacity .2s;
+  display: inline-flex;
+}
+
+.findLink:hover {
+  opacity: .75;
+}
+
+@media (width <= 768px) {
+  .wrap {
+    margin: 16px var(--container-px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+  }
+  .right {
+    align-items: flex-start;
+  }
+}
