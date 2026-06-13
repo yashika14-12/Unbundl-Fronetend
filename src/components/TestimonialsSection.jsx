@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import styles from './TestimonialsSection.module.css'
+import styles from '../styles/TestimonialsSection.module.css'
 
 const photoUrl = (i) => `https://picsum.photos/200/200?random=${110 + i}`
 

@@ -1,4 +1,4 @@
-import styles from './Nav.module.css'
+import styles from '../styles/Nav.module.css'
 import { PhoneIcon } from '../icons/icons'
 
 export default function Nav() {

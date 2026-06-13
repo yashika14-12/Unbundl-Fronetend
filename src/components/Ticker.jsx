@@ -1,10 +1,5 @@
-import styles from './Ticker.module.css'
-
-const TICKER_ITEMS = [
-  { text: 'Our inaugural launch benefit' },
-  { bold: 'Free teeth scan', suffix: ' worth ₹500' },
-  { bold: 'Free orthodontic consultation', suffix: ' worth ₹1500' },
-]
+import styles from '../styles/Ticker.module.css'
+import TICKER_ITEMS from '../data/tickerItems.json'
 
 const ALL_ITEMS = [...TICKER_ITEMS, ...TICKER_ITEMS, ...TICKER_ITEMS, ...TICKER_ITEMS]
 

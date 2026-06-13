@@ -1,4 +1,4 @@
-import styles from './AnnouncementBar.module.css'
+import styles from '../styles/AnnouncementBar.module.css'
 
 export default function AnnouncementBar() {
   return (

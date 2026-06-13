@@ -1,4 +1,4 @@
-import styles from './AlignerProductSection.module.css'
+import styles from '../styles/AlignerProductSection.module.css'
 import { StarIcon, ArrowRightIcon } from '../icons/icons'
 
 const PRODUCT_IMG = 'https://picsum.photos/400/220?random=55'

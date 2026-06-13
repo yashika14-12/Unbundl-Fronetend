@@ -1,7 +1,6 @@
-import styles from './Footer.module.css'
+import styles from '../styles/Footer.module.css'
 import { PhoneIcon, EmailIcon, InstagramIcon, FacebookIcon, TwitterXIcon } from '../icons/icons'
-
-const NAV_LINKS = ['Home', 'Book a Free Scan', 'How it Works', 'Range of Aligners', 'Aligners vs Braces', 'FAQs']
+import NAV_LINKS from '../data/footerLinks.json'
 
 export default function Footer() {
   return (

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import styles from './HeroSection.module.css'
+import styles from '../styles/HeroSection.module.css'
 
 const HERO_IMG = 'https://picsum.photos/560/380?random=42'
 

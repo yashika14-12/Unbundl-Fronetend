@@ -1,13 +1,5 @@
-import styles from './ResultsSection.module.css'
-
-const BASE = 'https://picsum.photos'
-
-const RESULTS = [
-  { concern: 'Gaps', duration: '8 months', before: `${BASE}/130/140?random=61`, after: `${BASE}/130/140?random=62` },
-  { concern: 'Crooked Teeth', duration: '8 months', before: `${BASE}/130/140?random=63`, after: `${BASE}/130/140?random=64` },
-  { concern: 'Open Bite', duration: '8 months', before: `${BASE}/130/140?random=65`, after: `${BASE}/130/140?random=66` },
-  { concern: 'Protruding Teeth', duration: '8 months', before: `${BASE}/130/140?random=67`, after: `${BASE}/130/140?random=68` },
-]
+import styles from '../styles/ResultsSection.module.css'
+import RESULTS from '../data/results.json'
 
 export default function ResultsSection() {
   return (

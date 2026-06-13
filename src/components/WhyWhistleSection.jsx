@@ -1,13 +1,5 @@
-import styles from './WhyWhistleSection.module.css'
-
-const BASE = 'https://picsum.photos'
-
-const FEATURES = [
-  { img: `${BASE}/320/240?random=71`, title: 'Custom-made & invisible', desc: 'Tailored for your teeth and smile with a clear, discreet appearance.' },
-  { img: `${BASE}/320/240?random=72`, title: 'Predictable results', desc: 'Advanced 3D modeling and AI-technology for precise planning and predictable results.' },
-  { img: `${BASE}/320/240?random=73`, title: 'Partnership with Clove Dental', desc: 'Led by highly experienced Orthodontists of Clove Dental and Whistle that have corrected over 2 lakh smiles.' },
-  { img: `${BASE}/320/240?random=74`, title: 'Unlimited Aligners*', desc: 'Unlimited aligners and doctor consults at no extra cost.' },
-]
+import styles from '../styles/WhyWhistleSection.module.css'
+import FEATURES from '../data/whyWhistleFeatures.json'
 
 export default function WhyWhistleSection() {
   return (

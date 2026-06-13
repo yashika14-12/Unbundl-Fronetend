@@ -1,4 +1,4 @@
-import styles from './DoctorLedSection.module.css'
+import styles from '../styles/DoctorLedSection.module.css'
 
 const DOCTOR_IMG = 'https://picsum.photos/560/480?random=95'
 

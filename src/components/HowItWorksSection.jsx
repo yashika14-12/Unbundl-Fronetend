@@ -1,13 +1,7 @@
-import styles from './HowItWorksSection.module.css'
+import styles from '../styles/HowItWorksSection.module.css'
+import STEPS from '../data/howItWorksSteps.json'
 
 const HOW_IMG = 'https://picsum.photos/520/390?random=90'
-
-const STEPS = [
-  { num: 1, title: 'Scan', desc: 'We use an AI-powered scanner to take a detailed 3D image of your teeth.' },
-  { num: 2, title: 'Plan', desc: 'Our Orthodontists design your customized smile enhancement plan using highly advanced software.' },
-  { num: 3, title: 'Fabricate', desc: 'We manufacture your custom aligners leveraging 3D printing & laser technology.' },
-  { num: 4, title: 'Wear', desc: 'Your Whistle Aligners and expert Clove Dental Orthodontists monitor your progress across the journey.' },
-]
 
 export default function HowItWorksSection() {
   return (

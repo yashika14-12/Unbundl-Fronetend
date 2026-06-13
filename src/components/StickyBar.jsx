@@ -1,4 +1,4 @@
-import styles from './StickyBar.module.css'
+import styles from '../styles/StickyBar.module.css'
 
 export default function StickyBar() {
   return (

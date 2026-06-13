@@ -1,4 +1,4 @@
-import styles from './CloveBanner.module.css'
+import styles from '../styles/CloveBanner.module.css'
 import { ArrowRightIcon } from '../icons/icons'
 
 export default function CloveBanner() {

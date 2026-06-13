@@ -1,13 +1,6 @@
-import styles from './ComparisonTable.module.css'
+import styles from '../styles/ComparisonTable.module.css'
 import { CheckCircleIcon, XCircleIcon, MinusIcon } from '../icons/icons'
-
-const ROWS = [
-  { feature: 'Painless Treatment', whistle: true, braces: false, others: true },
-  { feature: 'Minimal Dining Impact', whistle: true, braces: false, others: 'partial' },
-  { feature: 'Digital Design', whistle: true, braces: false, others: false },
-  { feature: 'Dental Community Access', whistle: true, braces: false, others: false },
-  { feature: 'Orthodontic Multi-tracking', whistle: true, braces: null, others: false },
-]
+import ROWS from '../data/comparisonRows.json'
 
 function CellValue({ val }) {
   if (val === true) return <CheckCircleIcon />
